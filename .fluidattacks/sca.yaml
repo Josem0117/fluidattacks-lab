@@ -1,5 +1,8 @@
 language: EN
-strict: false
+strict: true
+output:
+  file_path: fluidattacks-sca.csv
+  format: CSV
 sca:
   include:
     - .

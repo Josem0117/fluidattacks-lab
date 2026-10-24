@@ -1,5 +1,7 @@
 language: EN
-strict: false
+strict: true
+output:
+  file_path: fluidattacks-ss.csv
 ss:
   include:
     - .
