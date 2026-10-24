@@ -1,5 +1,5 @@
 language: EN
-strict: true
+strictness_threshold: high
 output:
   file_path: fluidattacks-sast.csv
   format: CSV
