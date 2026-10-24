@@ -1,0 +1,38 @@
+title,cwe,description,cvss_v4,cvss_v4_score,cvss_v4_severity,finding,kind,where,snippet,method
+183. Debugging enabled in production,CWE-489,The Flask configuration has debug mode enabled in Josem0117/fluidattacks-lab/app/main.py,CVSS:4.0/AT:P/AV:N/AC:L/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:U,0.6,Low,https://db.fluidattacks.com/wek/183,SAST,57,"
+  37 |     return ""ok""
+  38 |
+  39 |
+  40 | @app.route(""/load"", methods=[""POST""])
+  41 | def load():
+  42 |     return str(pickle.loads(request.data))
+  43 |
+  44 |
+  45 | @app.route(""/config"", methods=[""POST""])
+  46 | def config():
+  47 |     return str(yaml.load(request.data, Loader=yaml.Loader))
+  48 |
+  49 |
+  50 | @app.route(""/hash"")
+  51 | def weak_hash():
+  52 |     password = request.args.get(""password"")
+  53 |     return hashlib.md5(password.encode()).hexdigest()
+  54 |
+  55 |
+  56 | if __name__ == ""__main__"":
+> 57 |     app.run(host=""0.0.0.0"", debug=True)
+     ^ Col 0
+",python.flask.f183.debug_mode_enabled_flask
+096. Insecure deserialization,CWE-502,The application uses an unsafe deserializing method in Josem0117/fluidattacks-lab/app/main.py,CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:U,1.7,Low,https://db.fluidattacks.com/wek/096,SAST,47,"
+     | def config():
+> 47 |     return str(yaml.load(request.data, Loader=yaml.Loader))
+     ^ Col 0
+",python.general.f096.unsafe_deserialization_method
+404. OS Command Injection,CWE-78,"The application executes shell commands with untrusted user input via Python methods, allowing arbitrary command injection and execution in Josem0117/fluidattacks-lab/app/main.py",CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:U,1.3,Low,https://db.fluidattacks.com/wek/404,SAST,36,"
+  34 | def backup():
+  35 |     folder = request.args.get(""folder"")
+> 36 |     os.system(""tar czf /tmp/backup.tgz "" + folder)
+  37 |     return ""ok""
+     ^ Col 0
+",python.os.f404.command_injection_concat_string
+Summary: 3 vulnerabilities were found in your targets.

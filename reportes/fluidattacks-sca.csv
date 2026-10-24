@@ -1,0 +1,250 @@
+title,cwe,description,cvss_v4,cvss_v4_score,cvss_v4_severity,finding,kind,where,snippet,method,adv_id,package_name,package_version,dependency_type,epss_score,fix_version,kev_catalog
+002. Asymmetric denial of service,CWE-400,Use of jinja2 at version 2.10 with CVE-2020-28493 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U,2.7,Low,https://db.fluidattacks.com/wek/002,SCA,2,"
+  1 | flask==0.12.2
+> 2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2020-28493,jinja2,2.10,DIRECT,3,2.11.3,False
+002. Asymmetric denial of service,CWE-400,Use of urllib3 at version 1.24.1 with CVE-2021-33503 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U,6.6,Medium,https://db.fluidattacks.com/wek/002,SCA,5,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+> 5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2021-33503,urllib3,1.24.1,DIRECT,3,1.26.5,False
+017. Sensitive information sent insecurely,CWE-200,Use of requests at version 2.19.1 with CVE-2023-32681 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:U,2.3,Low,https://db.fluidattacks.com/wek/017,SCA,4,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+> 4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2023-32681,requests,2.19.1,DIRECT,2,2.31.0,False
+017. Sensitive information sent insecurely,CWE-522,Use of requests at version 2.19.1 with CVE-2024-47081 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:U,2.3,Low,https://db.fluidattacks.com/wek/017,SCA,4,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+> 4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2024-47081,requests,2.19.1,DIRECT,0,2.32.4,False
+017. Sensitive information sent insecurely,CWE-200,Use of urllib3 at version 1.24.1 with CVE-2023-45803 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:A/AC:L/AT:P/PR:H/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:U,1.9,Low,https://db.fluidattacks.com/wek/017,SCA,5,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+> 5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2023-45803,urllib3,1.24.1,DIRECT,0,1.26.18,False
+017. Sensitive information sent insecurely,CWE-669,Use of urllib3 at version 1.24.1 with CVE-2024-37891 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:H/AT:N/PR:H/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:U,2.1,Low,https://db.fluidattacks.com/wek/017,SCA,5,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+> 5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2024-37891,urllib3,1.24.1,DIRECT,1,1.26.19,False
+017. Sensitive information sent insecurely,CWE-200,Use of urllib3 at version 1.24.1 with CVE-2026-44431 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:U,4.6,Medium,https://db.fluidattacks.com/wek/017,SCA,5,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+> 5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2026-44431,urllib3,1.24.1,DIRECT,0,2.7.0,False
+028. Insecure temporary files,CWE-377,Use of requests at version 2.19.1 with CVE-2026-25645 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:U,1.9,Low,https://db.fluidattacks.com/wek/028,SCA,4,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+> 4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2026-25645,requests,2.19.1,DIRECT,0,2.33.0,False
+029. Inadequate file size control,CWE-770,Use of urllib3 at version 1.24.1 with CVE-2026-97689 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H/E:U,6.3,Medium,https://db.fluidattacks.com/wek/029,SCA,5,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+> 5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2026-97689,urllib3,1.24.1,DIRECT,0,2.8.0,False
+035. Weak credential policy,CWE-522,Use of requests at version 2.19.1 with CVE-2018-18074 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:U,6.6,Medium,https://db.fluidattacks.com/wek/035,SCA,4,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+> 4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2018-18074,requests,2.19.1,DIRECT,7,2.20.0,False
+042. Insecurely generated cookies,CWE-539,Use of flask at version 0.12.2 with CVE-2023-30861 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:U,6.6,Medium,https://db.fluidattacks.com/wek/042,SCA,1,"
+> 1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2023-30861,flask,0.12.2,DIRECT,1,2.2.5,False
+065. Cached form fields,CWE-524,Use of flask at version 0.12.2 with CVE-2026-27205 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:U,0.6,Low,https://db.fluidattacks.com/wek/065,SCA,1,"
+> 1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2026-27205,flask,0.12.2,DIRECT,0,3.1.3,False
+067. Improper resource allocation,CWE-400,Use of flask at version 0.12.2 with CVE-2019-1010083 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U,6.6,Medium,https://db.fluidattacks.com/wek/067,SCA,1,"
+> 1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2019-1010083,flask,0.12.2,DIRECT,1,1.0,False
+067. Improper resource allocation,CWE-770,Use of urllib3 at version 1.24.1 with CVE-2025-66418 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H/E:U,6.3,Medium,https://db.fluidattacks.com/wek/067,SCA,5,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+> 5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2025-66418,urllib3,1.24.1,DIRECT,0,2.6.0,False
+115. Security controls bypass or absence,CWE-693,Use of jinja2 at version 2.10 with CVE-2019-10906 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:H/SI:N/SA:N/E:U,4.4,Medium,https://db.fluidattacks.com/wek/115,SCA,2,"
+  1 | flask==0.12.2
+> 2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2019-10906,jinja2,2.10,DIRECT,3,2.10.1,False
+115. Security controls bypass or absence,CWE-693,Use of jinja2 at version 2.10 with CVE-2024-56326 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:U,2.0,Low,https://db.fluidattacks.com/wek/115,SCA,2,"
+  1 | flask==0.12.2
+> 2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2024-56326,jinja2,2.10,DIRECT,0,3.1.5,False
+156. Uncontrolled external site redirect,CWE-200 + CWE-601,Use of urllib3 at version 1.24.1 with CVE-2018-25091 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N/E:U,1.3,Low,https://db.fluidattacks.com/wek/156,SCA,5,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+> 5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2018-25091,urllib3,1.24.1,DIRECT,0,1.24.2,False
+156. Uncontrolled external site redirect,CWE-601,Use of urllib3 at version 1.24.1 with CVE-2025-50181 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:U,2.3,Low,https://db.fluidattacks.com/wek/156,SCA,5,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+> 5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2025-50181,urllib3,1.24.1,DIRECT,0,2.5.0,False
+159. Excessive privileges,CWE-409,Use of urllib3 at version 1.24.1 with CVE-2025-66471 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H/E:U,6.3,Medium,https://db.fluidattacks.com/wek/159,SCA,5,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+> 5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2025-66471,urllib3,1.24.1,DIRECT,0,2.6.0,False
+159. Excessive privileges,CWE-409,Use of urllib3 at version 1.24.1 with CVE-2026-21441 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H/E:U,6.3,Medium,https://db.fluidattacks.com/wek/159,SCA,5,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+> 5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2026-21441,urllib3,1.24.1,DIRECT,2,2.6.3,False
+163. Insecure digital certificates,CWE-295,Use of urllib3 at version 1.24.1 with CVE-2019-11324 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:U,6.6,Medium,https://db.fluidattacks.com/wek/163,SCA,5,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+> 5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2019-11324,urllib3,1.24.1,DIRECT,2,1.24.2,False
+164. Insecure service configuration,CWE-670,Use of requests at version 2.19.1 with CVE-2024-35195 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:A/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:U,0.5,Low,https://db.fluidattacks.com/wek/164,SCA,4,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+> 4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2024-35195,requests,2.19.1,DIRECT,0,2.32.0,False
+184. Lack of data validation,CWE-20,Use of flask at version 0.12.2 with CVE-2018-1000656 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U,6.6,Medium,https://db.fluidattacks.com/wek/184,SCA,1,"
+> 1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2018-1000656,flask,0.12.2,DIRECT,3,0.12.3,False
+184. Lack of data validation,CWE-20,Use of pyyaml at version 5.3 with CVE-2020-14343 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:U,8.1,High,https://db.fluidattacks.com/wek/184,SCA,3,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+> 3 | pyyaml==5.3
+  4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2020-14343,pyyaml,5.3,DIRECT,5,5.4,False
+184. Lack of data validation,CWE-20,Use of pyyaml at version 5.3 with CVE-2020-1747 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:U,8.1,High,https://db.fluidattacks.com/wek/184,SCA,3,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+> 3 | pyyaml==5.3
+  4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2020-1747,pyyaml,5.3,DIRECT,5,5.3.1,False
+184. Lack of data validation,CWE-93,Use of urllib3 at version 1.24.1 with CVE-2019-11236 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N/E:U,1.3,Low,https://db.fluidattacks.com/wek/184,SCA,5,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+> 5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2019-11236,urllib3,1.24.1,DIRECT,2,1.24.3,False
+184. Lack of data validation,CWE-74,Use of urllib3 at version 1.24.1 with CVE-2020-26137 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:U,2.7,Low,https://db.fluidattacks.com/wek/184,SCA,5,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+> 5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2020-26137,urllib3,1.24.1,DIRECT,2,1.25.9,False
+308. Enabled default configuration,CWE-200,Use of urllib3 at version 1.24.1 with CVE-2023-43804 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:U,4.5,Medium,https://db.fluidattacks.com/wek/308,SCA,5,"
+  1 | flask==0.12.2
+  2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+> 5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2023-43804,urllib3,1.24.1,DIRECT,1,1.26.17,False
+422. Server side template injection,CWE-1336,Use of jinja2 at version 2.10 with CVE-2025-27516 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:U,2.0,Low,https://db.fluidattacks.com/wek/422,SCA,2,"
+  1 | flask==0.12.2
+> 2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2025-27516,jinja2,2.10,DIRECT,0,3.1.6,False
+425. Server side cross-site scripting,CWE-79,Use of jinja2 at version 2.10 with CVE-2024-22195 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:U,1.3,Low,https://db.fluidattacks.com/wek/425,SCA,2,"
+  1 | flask==0.12.2
+> 2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2024-22195,jinja2,2.10,DIRECT,0,3.1.3,False
+425. Server side cross-site scripting,CWE-79,Use of jinja2 at version 2.10 with CVE-2024-34064 in Josem0117/fluidattacks-lab/requirements.txt,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:U,1.3,Low,https://db.fluidattacks.com/wek/425,SCA,2,"
+  1 | flask==0.12.2
+> 2 | jinja2==2.10
+  3 | pyyaml==5.3
+  4 | requests==2.19.1
+  5 | urllib3==1.24.1
+    ^ Col 0
+",python.pip_requirements_txt.sca.vulnerable_dependency,CVE-2024-34064,jinja2,2.10,DIRECT,0,3.1.4,False
+Summary: 31 vulnerabilities were found in your targets.

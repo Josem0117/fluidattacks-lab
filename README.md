@@ -24,7 +24,7 @@ Cada escáner lee su propio archivo de configuración en `.fluidattacks/`.
 | 3 | `strict: true`, CSV | Rojo: falla con cualquier hallazgo | [e9b810b](https://github.com/Josem0117/fluidattacks-lab/commit/e9b810b75dd60f719b78a508d4132723a55dfa08) |
 | 4 | `strictness_threshold: high`, CSV | Solo falla SCA (dos CVE High, 8.1) | [ce2813c](https://github.com/Josem0117/fluidattacks-lab/commit/ce2813ca5e3c01419c563c1c2c8dd587fc0dca8a) |
 
-Los CSV quedan como artefactos descargables de cada ejecución.
+Los CSV quedan como artefactos descargables de cada ejecución, y una copia está en [`reportes/`](reportes/): [SAST](reportes/fluidattacks-sast.csv) (3 hallazgos), [SCA](reportes/fluidattacks-sca.csv) (31) y [Secret Scan](reportes/fluidattacks-ss.csv) (2). Los pasos 3 y 4 generan los mismos CSV, porque el umbral solo decide si el build falla, no qué se reporta.
 
 Las acciones convierten el código de salida 1 del escáner en la salida `vulnerabilities_found` y terminan en verde, así que en los pasos 3 y 4 un paso "Break the build" hace fallar el job cuando esa salida es `true`.
 

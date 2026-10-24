@@ -1,0 +1,3 @@
+file_path,line,description,cvss_v4,finding,title,kind,method,verified
+app/main.py,12,PostgreSQL Connection String,CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:U,009,Sensitive information in source code,SS,postgresql.secret_detector.f009.connection_string,Non HTTP protocol
+app/settings.env,2,Redis Password,CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:U,009,Sensitive information in source code,SS,redis.secret_detector.f009.password,Non HTTP protocol
